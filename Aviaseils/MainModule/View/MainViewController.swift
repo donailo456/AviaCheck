@@ -19,54 +19,48 @@ class MainViewController: UIViewController {
     @IBOutlet weak var labelReturn: UILabel!
     @IBOutlet weak var noReturnTicket: UIButton!
     
+    @IBOutlet weak var originTextField: UITextField!
+    @IBOutlet weak var distanationTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         datePickerDepart.minimumDate = Date()
         datePickerReturn.minimumDate = Date()
+        datePickerReturn.alpha = 0.3
+        datePickerReturn.isEnabled = false
         print("datePickerDepart \(datePickerDepart.date)")
         print("datePickerReturn \(datePickerReturn.date)")
-        
-    }
-    
-    func getDateFromPicker(picker: UIDatePicker) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        let data = formatter.string(from: picker.date)
-        print(data)
-        return data
     }
     
     func setLabel(label: UILabel) {
         label.textColor = .systemGray
         label.font = .systemFont(ofSize: 13)
     }
-    @IBAction func departDate(_ sender: Any) {
-        Session.shared.departAt = getDateFromPicker(picker: datePickerDepart)
-        setLabel(label: labelDepart)
+    
+    
+  
+    @IBAction func distanationTextFieldAction(_ sender: UITextField) {
+        Info.shared.destanation = sender.text
     }
     
-    @IBAction func returnTicketNO(_ sender: Any) {
-        if datePickerReturn.isHidden {
-            datePickerReturn.isHidden = false
-            labelReturn.isHidden = false
-//            noReturnTicket.setTitle("Обратный билет не нужен", for: .normal)
-        }
-        else {
-            datePickerReturn.isHidden = true
-            labelReturn.isHidden = true
-//            noReturnTicket.setTitle("Выбрать обратный билет", for: .normal)
-//            noReturnTicket.titleLabel?.font = .systemFont(ofSize: 14)
-        }
-        
+    
+    @IBAction func originTextFieldAction(_ sender: UITextField) {
+        Info.shared.origin = sender.text
+    }
+    
+    
+    @IBAction func departDate(_ sender: Any) {
+        Info.shared.departAt = presenter.dateFormatter(picker: datePickerDepart)
+        datePickerReturn.isEnabled = true
+        datePickerReturn.alpha = 1
     }
     
     @IBAction func returnDate(_ sender: Any) {
-        Session.shared.returnAt = getDateFromPicker(picker: datePickerReturn)
-        setLabel(label: labelReturn)
+        Info.shared.returnAt = presenter.dateFormatter(picker: datePickerReturn)
     }
     
     @IBAction func presentAvia(_ sender: Any) {
-        if getDateFromPicker(picker: datePickerReturn) == getDateFromPicker(picker: datePickerDepart) {
+        if presenter.dateFormatter(picker: datePickerReturn) == presenter.dateFormatter(picker: datePickerDepart) || Info.shared.origin == "" || Info.shared.destanation == ""  {
             let alert = UIAlertController(title: "Ошибка", message: "Проверьте правильность данных", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel))
             present(alert, animated: true)

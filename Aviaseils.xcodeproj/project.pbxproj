@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E429D0EA2A7A6556007356F8 /* AviaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429D0E82A7A6556007356F8 /* AviaViewController.swift */; };
+		E429D0EB2A7A6556007356F8 /* AviaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E429D0E92A7A6556007356F8 /* AviaViewController.xib */; };
+		E429D0ED2A7A658E007356F8 /* AviaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429D0EC2A7A658E007356F8 /* AviaPresenter.swift */; };
+		E4417E652AC5D7EA0001467A /* AirportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4417E642AC5D7EA0001467A /* AirportModel.swift */; };
 		E49160F82A69BE41002222FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49160F72A69BE41002222FF /* AppDelegate.swift */; };
 		E49160FA2A69BE41002222FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49160F92A69BE41002222FF /* SceneDelegate.swift */; };
-		E49160FC2A69BE41002222FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49160FB2A69BE41002222FF /* ViewController.swift */; };
+		E49160FC2A69BE41002222FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49160FB2A69BE41002222FF /* MainViewController.swift */; };
 		E49160FF2A69BE41002222FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49160FD2A69BE41002222FF /* Main.storyboard */; };
 		E49161012A69BE42002222FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49161002A69BE42002222FF /* Assets.xcassets */; };
 		E49161042A69BE42002222FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49161022A69BE42002222FF /* LaunchScreen.storyboard */; };
 		E491610F2A69BE42002222FF /* AviaseilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491610E2A69BE42002222FF /* AviaseilsTests.swift */; };
 		E49161192A69BE42002222FF /* AviaseilsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49161182A69BE42002222FF /* AviaseilsUITests.swift */; };
 		E491611B2A69BE42002222FF /* AviaseilsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491611A2A69BE42002222FF /* AviaseilsUITestsLaunchTests.swift */; };
+		E491613C2A7006A8002222FF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E491613B2A7006A8002222FF /* MainViewController.xib */; };
+		E491613E2A700717002222FF /* AsselderModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491613D2A700717002222FF /* AsselderModuleBuilder.swift */; };
+		E49161402A7007C2002222FF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491613F2A7007C2002222FF /* Comment.swift */; };
+		E49161432A7007E7002222FF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49161422A7007E7002222FF /* NetworkService.swift */; };
+		E49161452A700801002222FF /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49161442A700801002222FF /* MainPresenter.swift */; };
+		E4A07FCA2A76EA3D0076A29C /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A07FC92A76EA3D0076A29C /* CustomTableCell.swift */; };
+		E4BE25652A7D51A3002FD9C5 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BE25642A7D51A3002FD9C5 /* RouterProtocol.swift */; };
+		E4D024F32ABE2CBB00CE7185 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D024F22ABE2CBB00CE7185 /* Info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E429D0E82A7A6556007356F8 /* AviaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaViewController.swift; sourceTree = "<group>"; };
+		E429D0E92A7A6556007356F8 /* AviaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AviaViewController.xib; sourceTree = "<group>"; };
+		E429D0EC2A7A658E007356F8 /* AviaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaPresenter.swift; sourceTree = "<group>"; };
+		E4417E642AC5D7EA0001467A /* AirportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportModel.swift; sourceTree = "<group>"; };
 		E49160F42A69BE41002222FF /* Aviaseils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aviaseils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49160F72A69BE41002222FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E49160F92A69BE41002222FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E49160FB2A69BE41002222FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E49160FB2A69BE41002222FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E49160FE2A69BE41002222FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E49161002A69BE42002222FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E49161032A69BE42002222FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +65,14 @@
 		E49161142A69BE42002222FF /* AviaseilsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviaseilsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49161182A69BE42002222FF /* AviaseilsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaseilsUITests.swift; sourceTree = "<group>"; };
 		E491611A2A69BE42002222FF /* AviaseilsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaseilsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E491613B2A7006A8002222FF /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		E491613D2A700717002222FF /* AsselderModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsselderModuleBuilder.swift; sourceTree = "<group>"; };
+		E491613F2A7007C2002222FF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		E49161422A7007E7002222FF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E49161442A700801002222FF /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		E4A07FC92A76EA3D0076A29C /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		E4BE25642A7D51A3002FD9C5 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		E4D024F22ABE2CBB00CE7185 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E429D0EE2A7A6787007356F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E491613F2A7007C2002222FF /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E49160EB2A69BE41002222FF = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +131,12 @@
 		E49160F62A69BE41002222FF /* Aviaseils */ = {
 			isa = PBXGroup;
 			children = (
-				E49160F72A69BE41002222FF /* AppDelegate.swift */,
-				E49160F92A69BE41002222FF /* SceneDelegate.swift */,
-				E49160FB2A69BE41002222FF /* ViewController.swift */,
-				E49160FD2A69BE41002222FF /* Main.storyboard */,
-				E49161002A69BE42002222FF /* Assets.xcassets */,
-				E49161022A69BE42002222FF /* LaunchScreen.storyboard */,
-				E49161052A69BE42002222FF /* Info.plist */,
+				E4BB8D612AC771990018CC21 /* Application */,
+				E4BB8D602AC7713D0018CC21 /* Resourse */,
+				E4BE25662A7D51A5002FD9C5 /* Router */,
+				E4A07FAF2A76DD720076A29C /* AviaModule */,
+				E491613A2A700669002222FF /* MainModule */,
+				E49161412A7007CA002222FF /* ServiceLayer */,
 			);
 			path = Aviaseils;
 			sourceTree = "<group>";
@@ -125,6 +156,107 @@
 				E491611A2A69BE42002222FF /* AviaseilsUITestsLaunchTests.swift */,
 			);
 			path = AviaseilsUITests;
+			sourceTree = "<group>";
+		};
+		E49161292A69BFB7002222FF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E49161442A700801002222FF /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E49161392A700661002222FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E49160FB2A69BE41002222FF /* MainViewController.swift */,
+				E491613B2A7006A8002222FF /* MainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E491613A2A700669002222FF /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				E4D024EE2ABE2C7800CE7185 /* MainModel */,
+				E49161292A69BFB7002222FF /* Presenter */,
+				E49161392A700661002222FF /* View */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		E49161412A7007CA002222FF /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E49161422A7007E7002222FF /* NetworkService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		E4A07FAF2A76DD720076A29C /* AviaModule */ = {
+			isa = PBXGroup;
+			children = (
+				E429D0EE2A7A6787007356F8 /* Model */,
+				E4A07FB12A76DD850076A29C /* Presenter */,
+				E4A07FB02A76DD810076A29C /* VIew */,
+			);
+			path = AviaModule;
+			sourceTree = "<group>";
+		};
+		E4A07FB02A76DD810076A29C /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				E429D0E82A7A6556007356F8 /* AviaViewController.swift */,
+				E429D0E92A7A6556007356F8 /* AviaViewController.xib */,
+				E4A07FC92A76EA3D0076A29C /* CustomTableCell.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		E4A07FB12A76DD850076A29C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E429D0EC2A7A658E007356F8 /* AviaPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E4BB8D602AC7713D0018CC21 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				E49160FD2A69BE41002222FF /* Main.storyboard */,
+				E49161002A69BE42002222FF /* Assets.xcassets */,
+				E49161022A69BE42002222FF /* LaunchScreen.storyboard */,
+				E49161052A69BE42002222FF /* Info.plist */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		E4BB8D612AC771990018CC21 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E49160F72A69BE41002222FF /* AppDelegate.swift */,
+				E49160F92A69BE41002222FF /* SceneDelegate.swift */,
+				E491613D2A700717002222FF /* AsselderModuleBuilder.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E4BE25662A7D51A5002FD9C5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E4BE25642A7D51A3002FD9C5 /* RouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E4D024EE2ABE2C7800CE7185 /* MainModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4D024F22ABE2CBB00CE7185 /* Info.swift */,
+				E4417E642AC5D7EA0001467A /* AirportModel.swift */,
+			);
+			path = MainModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +364,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E49161042A69BE42002222FF /* LaunchScreen.storyboard in Resources */,
+				E429D0EB2A7A6556007356F8 /* AviaViewController.xib in Resources */,
 				E49161012A69BE42002222FF /* Assets.xcassets in Resources */,
 				E49160FF2A69BE41002222FF /* Main.storyboard in Resources */,
+				E491613C2A7006A8002222FF /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +392,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E49160FC2A69BE41002222FF /* ViewController.swift in Sources */,
+				E4BE25652A7D51A3002FD9C5 /* RouterProtocol.swift in Sources */,
+				E49161402A7007C2002222FF /* Comment.swift in Sources */,
+				E49160FC2A69BE41002222FF /* MainViewController.swift in Sources */,
+				E4D024F32ABE2CBB00CE7185 /* Info.swift in Sources */,
+				E429D0EA2A7A6556007356F8 /* AviaViewController.swift in Sources */,
+				E429D0ED2A7A658E007356F8 /* AviaPresenter.swift in Sources */,
 				E49160F82A69BE41002222FF /* AppDelegate.swift in Sources */,
+				E4A07FCA2A76EA3D0076A29C /* CustomTableCell.swift in Sources */,
 				E49160FA2A69BE41002222FF /* SceneDelegate.swift in Sources */,
+				E49161432A7007E7002222FF /* NetworkService.swift in Sources */,
+				E49161452A700801002222FF /* MainPresenter.swift in Sources */,
+				E4417E652AC5D7EA0001467A /* AirportModel.swift in Sources */,
+				E491613E2A700717002222FF /* AsselderModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +583,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38T9RQ5V9X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Aviaseils/Info.plist;
+				INFOPLIST_FILE = Aviaseils/Resourse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +611,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38T9RQ5V9X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Aviaseils/Info.plist;
+				INFOPLIST_FILE = Aviaseils/Resourse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

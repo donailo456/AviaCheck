@@ -13,9 +13,8 @@
                 <outlet property="button" destination="WKE-21-7eQ" id="F8P-UY-xjj"/>
                 <outlet property="datePickerDepart" destination="fOI-St-zXq" id="dM3-z3-1LQ"/>
                 <outlet property="datePickerReturn" destination="rDu-PK-s3q" id="GZn-15-UoK"/>
-                <outlet property="labelDepart" destination="j66-Vo-iwL" id="cC3-B9-TBg"/>
-                <outlet property="labelReturn" destination="OHw-yn-75w" id="qGw-h2-OVj"/>
-                <outlet property="noReturnTicket" destination="fqB-LB-bUk" id="Fxu-Rc-Jpi"/>
+                <outlet property="distanationTextField" destination="zhy-bA-OSi" id="g13-Il-NfK"/>
+                <outlet property="originTextField" destination="muh-23-dML" id="YQl-Dd-VIe"/>
                 <outlet property="view" destination="iN0-l3-epB" id="msu-RQ-Kdg"/>
             </connections>
         </placeholder>
@@ -24,38 +23,20 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Поиска дешевых авиа-билетов" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fY-a3-KAv">
-                    <rect key="frame" x="16" y="159" width="361" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поиска дешевых авиа-билетов" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fY-a3-KAv">
+                    <rect key="frame" x="16" y="165" width="361" height="24"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKE-21-7eQ">
-                    <rect key="frame" x="117" y="632" width="159" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKE-21-7eQ">
+                    <rect key="frame" x="117" y="576.66666666666663" width="159" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Искать билеты"/>
                     <connections>
                         <action selector="presentAvia:" destination="-1" eventType="touchUpInside" id="Vnn-1R-Lig"/>
                     </connections>
                 </button>
-                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-St-zXq">
-                    <rect key="frame" x="16" y="320" width="142" height="34"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <locale key="locale" localeIdentifier="ru_RU"/>
-                    <connections>
-                        <action selector="departDate:" destination="-1" eventType="valueChanged" id="7As-Bh-DLY"/>
-                    </connections>
-                </datePicker>
-                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="rDu-PK-s3q">
-                    <rect key="frame" x="235" y="320" width="142" height="34"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <locale key="locale" localeIdentifier="ru_RU"/>
-                    <connections>
-                        <action selector="returnDate:" destination="-1" eventType="valueChanged" id="O37-0r-nUj"/>
-                    </connections>
-                </datePicker>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRj-Ou-DtS">
                     <rect key="frame" x="35" y="291" width="0.0" height="0.0"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,41 +44,76 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Дату вылета" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j66-Vo-iwL">
-                    <rect key="frame" x="16" y="290" width="99" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Дату прилета" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHw-yn-75w">
-                    <rect key="frame" x="269.33333333333331" y="290" width="107.66666666666669" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Выберите" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bn-2L-X3J">
-                    <rect key="frame" x="154" y="249" width="84" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqB-LB-bUk">
-                    <rect key="frame" x="240" y="364.33333333333331" width="133" height="47.666666666666686"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Обратный билет не нужен">
-                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
-                    </buttonConfiguration>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Откуда" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="muh-23-dML">
+                    <rect key="frame" x="34" y="229" width="325" height="34"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
                     <connections>
-                        <action selector="returnTicketNO:" destination="-1" eventType="touchUpInside" id="4w9-lA-5cw"/>
+                        <action selector="originTextFieldAction:" destination="-1" eventType="editingChanged" id="bmt-CL-V34"/>
                     </connections>
-                </button>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Куда" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zhy-bA-OSi">
+                    <rect key="frame" x="34" y="293" width="325" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="distanationTextFieldAction:" destination="-1" eventType="editingChanged" id="1ho-j7-dYh"/>
+                    </connections>
+                </textField>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-St-zXq">
+                    <rect key="frame" x="117" y="357" width="242" height="34.333333333333314"/>
+                    <locale key="locale" localeIdentifier="ru_RU"/>
+                    <connections>
+                        <action selector="departDate:" destination="-1" eventType="valueChanged" id="7As-Bh-DLY"/>
+                    </connections>
+                </datePicker>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="rDu-PK-s3q">
+                    <rect key="frame" x="117" y="407.33333333333331" width="242" height="34.333333333333314"/>
+                    <locale key="locale" localeIdentifier="ru_RU"/>
+                    <connections>
+                        <action selector="returnDate:" destination="-1" eventType="valueChanged" id="O37-0r-nUj"/>
+                    </connections>
+                </datePicker>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Когда" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmT-zh-VT0">
+                    <rect key="frame" x="35" y="357" width="47" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Обратно" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCr-dO-0BI">
+                    <rect key="frame" x="34" y="407" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="muh-23-dML" firstAttribute="top" secondItem="3fY-a3-KAv" secondAttribute="bottom" constant="40" id="5oP-h9-WHo"/>
+                <constraint firstItem="3fY-a3-KAv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="106" id="Dfx-l8-OPT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zhy-bA-OSi" secondAttribute="trailing" constant="34" id="F0n-Pl-yxR"/>
+                <constraint firstItem="fOI-St-zXq" firstAttribute="leading" secondItem="gmT-zh-VT0" secondAttribute="trailing" constant="35" id="Flj-ri-YT1"/>
+                <constraint firstItem="fOI-St-zXq" firstAttribute="top" secondItem="zhy-bA-OSi" secondAttribute="bottom" constant="30" id="GvM-zy-KK5"/>
+                <constraint firstItem="zhy-bA-OSi" firstAttribute="top" secondItem="muh-23-dML" secondAttribute="bottom" constant="30" id="Ilv-zJ-wPQ"/>
+                <constraint firstItem="uCr-dO-0BI" firstAttribute="top" secondItem="gmT-zh-VT0" secondAttribute="bottom" constant="29" id="Lao-MR-oXL"/>
+                <constraint firstItem="WKE-21-7eQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="117" id="SbX-M7-DGz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fOI-St-zXq" secondAttribute="trailing" constant="34" id="Vu9-i1-Y0J"/>
+                <constraint firstItem="zhy-bA-OSi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="ZAP-Dm-wZW"/>
+                <constraint firstItem="WKE-21-7eQ" firstAttribute="top" secondItem="rDu-PK-s3q" secondAttribute="bottom" constant="135" id="a12-g5-I3Z"/>
+                <constraint firstItem="3fY-a3-KAv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="aub-8G-o3y"/>
+                <constraint firstItem="uCr-dO-0BI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="cuS-BV-5px"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3fY-a3-KAv" secondAttribute="trailing" constant="16" id="dfg-6L-NYH"/>
+                <constraint firstItem="muh-23-dML" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="f83-1i-RBh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="muh-23-dML" secondAttribute="trailing" constant="34" id="fCT-JB-Yce"/>
+                <constraint firstItem="WKE-21-7eQ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="hFe-x6-xo3"/>
+                <constraint firstItem="gmT-zh-VT0" firstAttribute="top" secondItem="zhy-bA-OSi" secondAttribute="bottom" constant="30" id="jI5-C1-cvq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rDu-PK-s3q" secondAttribute="trailing" constant="34" id="oac-Ml-7Tr"/>
+                <constraint firstItem="gmT-zh-VT0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="poK-fy-z5d"/>
+                <constraint firstItem="rDu-PK-s3q" firstAttribute="leading" secondItem="uCr-dO-0BI" secondAttribute="trailing" constant="13" id="qty-aJ-gZR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WKE-21-7eQ" secondAttribute="trailing" constant="117" id="wMo-Eb-y5E"/>
+                <constraint firstItem="rDu-PK-s3q" firstAttribute="top" secondItem="fOI-St-zXq" secondAttribute="bottom" constant="16" id="yo6-6v-Hm6"/>
+            </constraints>
             <point key="canvasLocation" x="61.832061068702288" y="19.718309859154932"/>
         </view>
     </objects>
